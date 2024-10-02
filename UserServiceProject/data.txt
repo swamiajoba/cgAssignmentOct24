@@ -1,0 +1,121 @@
+http method = POST
+http://localhost:9091/users/create
+
+request body
+----------------
+ {
+    "username":"manju",
+    "password":"manju123",
+    "email":"manju@gmail.com",
+    "fullName":"Manjiri Tatke",
+     "roles": [
+       {
+         "name": "CUSTOMER"
+      },
+      {
+      	 
+         "name": "BANKEMP"
+      }
+   
+    ],
+    "createdAt":"2023-06-10"
+}
+
+Response
+User Created successfully
+
+-------------------------
+Request body
+
+ {
+    "username":"geetha",
+    "password":"geetha123",
+    "email":"geetha@gmail.com",
+    "fullName":"Geetha Rao",
+     "roles": [
+
+     {
+     	  "id" :2,
+         "name": "CUSTOMER"
+      }
+    ],
+    "createdAt":"2023-06-10"
+}
+
+response 
+USer Created successfully
+-------------------------------
+Request Body
+{
+    "username": "seetha",
+    "password": "seetha123",
+    "email": "seetha@gmail.com",
+    "fullName": "Seetha Kumari",
+    "roles": [
+      {
+        "id": 2,
+        "name": "CUSTOMER"
+      }
+
+    ],
+    "createdAt": "2023-06-13"
+  }
+  
+ Response
+ -------------
+ User Created Successfully
+ 
+ ==========================================
+ url =  http://localhost:9091/users/getAll
+ http method = GET
+ 
+ 
+ Response
+ ---------
+ [
+    {
+        "username": "manju",
+        "password": null,
+        "email": "manju@gmail.com",
+        "fullName": "Manjiri Tatke",
+        "roles": [
+            {
+                "id": 1,
+                "name": "BANKEMP"
+            },
+            {
+                "id": 2,
+                "name": "CUSTOMER"
+            }
+        ],
+        "createdAt": "2023-06-10"
+    },
+    {
+        "username": "geetha",
+        "password": null,
+        "email": "geetha@gmail.com",
+        "fullName": "Geetha Rao",
+        "roles": [
+            {
+                "id": 2,
+                "name": "CUSTOMER"
+            }
+        ],
+        "createdAt": "2023-06-10"
+    },
+    {
+        "username": "seetha",
+        "password": null,
+        "email": "seetha@gmail.com",
+        "fullName": "Seetha Kumari",
+        "roles": [
+            {
+                "id": 2,
+                "name": "CUSTOMER"
+            }
+        ],
+        "createdAt": "2023-06-13"
+    }
+]
+ 
+  
