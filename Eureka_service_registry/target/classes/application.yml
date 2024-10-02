@@ -1,0 +1,13 @@
+#server:
+#  port: 8761
+#  
+# # 8761 is the default port of the Eureka Server
+# 
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    
+## Since this is the Eureka service registry server ,
+## No need to register this server microservice with itself
+## hence no need to fetch registry 

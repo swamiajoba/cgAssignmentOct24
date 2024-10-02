@@ -1,0 +1,72 @@
+url = http://localhost:9092/accounts/create
+http method = POST
+
+Request Body
+-------------
+{
+    "balance":40000.00,
+    "username": "manju"
+
+}
+
+Response
+----------
+{
+    "aid": 7,
+    "balance": 40000.0,
+    "username": "manju"
+}
+---------------------------
+Request Body
+-----------
+{
+    "balance":78000.00,
+    "username": "seetha"
+
+}
+
+Response 
+------------
+
+{
+    "aid": 8,
+    "balance": 78000.0,
+    "username": "seetha"
+}
+--------
+Request Body
+-----------------
+{
+    "balance":34000.00,
+    "username": "seetha"
+
+}
+
+Response
+-------------
+{
+    "aid": 9,
+    "balance": 34000.0,
+    "username": "seetha"
+}
+
+=======================================
+http method = GET
+url= http://localhost:9092/accounts/byUserEmail?email=seetha@gmail.com
+
+Response
+-------------
+[
+    {
+        "aid": 8,
+        "balance": 78000.0,
+        "username": "seetha"
+    },
+    {
+        "aid": 9,
+        "balance": 34000.0,
+        "username": "seetha"
+    }
+]
+
+
